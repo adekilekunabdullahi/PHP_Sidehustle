@@ -1,1 +1,1 @@
-# PHP_Sidehustle
+# This directory contains projects on php
