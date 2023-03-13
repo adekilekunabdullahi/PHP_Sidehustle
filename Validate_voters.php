@@ -4,7 +4,7 @@ function validate_voter($age, $has_PVC, $ward){
 		$has_PVC = false;
 		}
 	if ($age >=18 && $has_PVC == true && $ward == 020){
-		echo "Voter eligible to vote";
+		echo "Voter eligible to vote <br>";
 		}
 	else{
 		echo "Not Eligible because: <br>";
