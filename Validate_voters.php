@@ -6,17 +6,19 @@ function validate_voter($age, $has_PVC, $ward){
 	if ($age >=18 && $has_PVC == true && $ward == 020){
 		echo "Voter eligible to vote";
 		}
-	elseif ($age < 18){
-		echo "Not Eligible: your age must be 18 or greater to vote";
+	if ($age < 18){
+		echo "Not Eligible: your age must be 18 or greater to vote <br>";
 		}
-	elseif ($has_PVC == false){
-		echo "Not Eligible: you must have pvc to vote";
+	if ($has_PVC == false){
+		echo "Not Eligible: you must have pvc to vote <br>";
 		}
-	elseif ($ward != 020){
-		echo "Not Eligible: you must belong to ward 020 to vote";
+	if ($ward != 020){
+		echo "Not Eligible: you must belong to ward 020 to vote <br>";
 		}
 	else{
 		echo "you are not eligible to vote";
 		}
 }
+validate_voter(18, true, 020) //success
+validate_voter(17, true, 020) //failure
 ?>
